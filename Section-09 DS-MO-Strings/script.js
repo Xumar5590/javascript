@@ -690,10 +690,3 @@ for (const [key, value] of gameEvents) {
     console.log(`${value}, is in second half!`);
   }
 }
-
-const a = 1 + 2;
-console.log(a);
-
-const bingo = "bingo";
-console.log(bingo);
-asdasd;

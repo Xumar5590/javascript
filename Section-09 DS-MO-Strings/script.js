@@ -60,6 +60,38 @@ const restaurant = {
   },
 };
 
+/* Strings */
+const airline = "Tap Air Portugal";
+const plane = "A320";
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+
+console.log(airline.length);
+console.log(airline.indexOf("r"));
+console.log(airline.lastIndexOf("r"));
+console.log(airline.lastIndexOf("Portugal"));
+
+console.log(airline.slice(0, 4));
+console.log(airline.slice(-3));
+
+function checkMiddleSeat(seat) {
+  const s = seat.slice(-1);
+  if (s === "B" || s === "E") {
+    console.log(`You got the middle seat`);
+  } else {
+    console.log(`You got lucky`);
+  }
+}
+
+checkMiddleSeat("11B");
+checkMiddleSeat("2C");
+checkMiddleSeat("1A");
+
+console.log(new String("Zumar"));
+console.log(typeof new String("Zumar")); // Object
+
 /* Map Iteration 
 
 const question = new Map([
@@ -654,7 +686,7 @@ whether it's in the first half or second half (after 45 min) of the game, like t
 [FIRST HALF] 17: ⚽ GOAL
 GOOD LUCK x
 
-*/
+
 const gameEvents = new Map([
   [17, "⚽ GOAL"],
   [36, "� Substitution"],
@@ -690,3 +722,5 @@ for (const [key, value] of gameEvents) {
     console.log(`${value}, is in second half!`);
   }
 }
+
+*/
